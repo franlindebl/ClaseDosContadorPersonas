@@ -1,0 +1,17 @@
+<div class="contador">
+  <div class="contador-buttons">
+
+    <button (click)="addPeople(1)" class="add-people-button">+1</button>
+    <button (click)="addPeople(5)" class="add-people-button">+5</button>
+    <button (click)="addPeople(10)" class="add-people-button">+10</button>
+
+  </div>
+  <div class="contador-total">
+
+    <h3 *ngIf="opened">La puerta está ABIERTA</h3>
+    <h3 *ngIf="!opened">La puerta está CERRADA</h3>
+
+    <p>Total: {{ total }}</p>
+
+  </div>
+</div>
